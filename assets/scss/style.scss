@@ -1,0 +1,69 @@
+/*
+Template Name: gameWolf - gaming HTML Template;
+Author: ThemesWolf;
+Version: 1.0;
+Description: gaming HTML Template;
+Tags: HTML, SASS, Tailwind CSS,  JavaScript;
+*/
+
+@use "./tailwind";
+@use "./global";
+@use "./section";
+
+// Plugins
+@use "../css/magnific-popup.css";
+@use "../css/odometer-min.css";
+@use "../css/swiper.min.css";
+@use "../css/aos.css";
+@use "../css/lenis.css";
+@use "../fonts/fontssheet.css";
+
+// // Fonts
+// @font-face {
+//   font-family: "Outfit";
+//   font-weight: normal;
+//   font-style: normal;
+//   src: url("../assets/fonts/Outfit-Regular.ttf") format("truetype");
+// }
+// @font-face {
+//   font-family: "Outfit";
+//   font-weight: bold;
+//   font-style: normal;
+//   src: url("../assets/fonts/Outfit-Bold.ttf") format("truetype");
+// }
+// @font-face {
+//   font-family: "Outfit";
+//   font-weight: 800; /* For ExtraBold */
+//   font-style: normal;
+//   src: url("../assets/fonts/Outfit-ExtraBold.ttf") format("truetype");
+// }
+// @font-face {
+//   font-family: "Outfit";
+//   font-weight: lighter; /* For ExtraLight */
+//   font-style: normal;
+//   src: url("../assets/fonts/Outfit-ExtraLight.ttf") format("truetype");
+// }
+// @font-face {
+//   font-family: "Outfit";
+//   font-weight: 300; /* For Light */
+//   font-style: normal;
+//   src: url("../assets/fonts/Outfit-Light.ttf") format("truetype");
+// }
+// @font-face {
+//   font-family: "Outfit";
+//   font-weight: 500; /* For Medium */
+//   font-style: normal;
+//   src: url("../assets/fonts/Outfit-Medium.ttf") format("truetype");
+// }
+// @font-face {
+//   font-family: "Outfit";
+//   font-weight: 600; /* For SemiBold */
+//   font-style: normal;
+//   src: url("../assets/fonts/Outfit-SemiBold.ttf") format("truetype");
+// }
+// @font-face {
+//   font-family: "Outfit";
+//   font-weight: 100; /* For Thin */
+//   font-style: normal;
+//   src: url("../assets/fonts/Outfit-Thin.ttf") format("truetype");
+// }

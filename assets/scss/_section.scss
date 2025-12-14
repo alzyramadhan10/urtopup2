@@ -1,0 +1,1152 @@
+/*################# css contents #################*/
+// 1. preloader section
+// 2. header section
+// 3. hero section nav ber
+// 4. Our Games section
+// 5. Explore Game section
+// 6. top trending section
+// 7. popular games section
+// 8. achievements section
+// 9. achievements introduction section
+// 10. achievements introduction faq section
+// 11. bounty bred crumb section section
+// 12. bred crumb section section
+// 13 global style
+// 14. responsive
+
+/*################################################*/
+
+/*=============== 1. preloader section stat ===============*/
+/* Preloader start */
+// body {
+  // overflow: hidden;
+// }
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  z-index: 9999 !important;
+}
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+}
+/* progress bar start */
+:root {
+  --progress-bar-width: 100px;
+  --progress-bar-height: 100px;
+}
+.circular-progress {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-circle {
+  position: absolute;
+  width: calc(var(--progress-bar-width) - 20px);
+  height: calc(var(--progress-bar-height) - 20px);
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.percentage {
+  position: relative;
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(0, 0, 0, 0.8);
+}
+/* Preloader end */
+/*=============== preloader section end ===============*/
+
+/*################# home page start #################*/
+/*=============== 2. header section stat ===============*/
+.header-section {
+  .header {
+    z-index: 999 !important;
+    // navber dropdown
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #263e26;
+      min-width: 160px;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: #ffff;
+      padding: 7px 16px;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #263e26;
+      color: #ffff;
+      transition: 0.8s;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      transition: 0.8s;
+    }
+
+    .sidenav {
+      height: 80%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+      margin-top: 4rem;
+    }
+    .sidenav a:hover,
+    .dropdown-btn:hover {
+      color: #f1f1f1;
+    }
+    .active {
+      color: white;
+    }
+    .dropdown-container {
+      display: none;
+    }
+
+    // navber nav active
+    .nav-item a {
+      color: #ffff;
+    }
+    .nav-item.active a {
+      color: #ff325a;
+    }
+
+    // notification
+    .sidepanel {
+      width: 0;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      right: 0;
+      overflow-x: hidden;
+      transition: 0.5s;
+      height: 100vh;
+      background-color: #13181f;
+    }
+
+    .openbtn {
+      display: block;
+    }
+
+    .open {
+      display: block;
+      width: 440px;
+      height: 100vh;
+    }
+  }
+
+  // navber nav scroll nav color change
+  .header {
+    position: fixed;
+    z-index: 1000;
+    height: 75px;
+    width: 100%;
+    -webkit-transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+    transition: all ease-out 0.5s;
+  }
+
+  .activetwo {
+    background-color: #ff335a;
+  }
+
+  //notification
+  .beforeAfter::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #878b95;
+    position: absolute;
+    top: 16px;
+    left: 100px;
+  }
+  .beforeAfter::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #878b95;
+    position: absolute;
+    top: 16px;
+    right: 100px;
+  }
+
+  // our partner section
+  .ourPartnerSection {
+    .container {
+      .brand-carouselTwo {
+        .swiper-wrapper {
+          -webkit-transition-timing-function: linear !important;
+          -o-transition-timing-function: linear !important;
+          transition-timing-function: linear !important;
+        }
+      }
+    }
+  }
+}
+/*=============== header section end ===============*/
+
+/*=============== 3. hero section nav ber stat ===============*/
+.hero-section {
+  .container {
+    // hero section text gradient
+    .lin {
+      background: var(
+        --Button,
+        linear-gradient(100deg, #ff325a 9.67%, #e1e500 87.06%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* hero photo up down start */
+    img.vert-move {
+      -webkit-animation: mover 2s infinite alternate;
+      animation: mover 2s infinite alternate;
+      margin-bottom: -10px;
+    }
+    img.vert-move {
+      -webkit-animation: mover 2s infinite alternate;
+      animation: mover 2s infinite alternate;
+      margin-bottom: -10px;
+    }
+    @-webkit-keyframes mover {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-10px);
+      }
+    }
+    @keyframes mover {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-10px);
+      }
+    }
+    /* hero photo up down end */
+  }
+  .dwon-section {
+    // hero down slider
+    .brand-carouselOne {
+      .swiper-wrapper {
+        -webkit-transition-timing-function: linear !important;
+        -o-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+      }
+    }
+  }
+}
+/*=============== hero section nav ber stat ===============*/
+
+/*=============== 4. Our Games section start ===============*/
+.ourGameSection {
+  .container {
+    // Our games button
+    .card2 {
+      position: relative;
+      border: 5px solid transparent;
+      background: #18191f;
+      background-clip: padding-box;
+      border-radius: 10px;
+      z-index: 1;
+    }
+
+    .card2::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: -5px;
+      right: -5px;
+      background: linear-gradient(to bottom right, #22c1c3, #fdbb2d);
+      z-index: -1;
+      border-radius: 10px;
+    }
+
+    /* swiper slider active start */
+    .slider-games {
+      .swiper-slide-active {
+        transform: scale(1.1);
+        transition: 1s;
+        background-color: #263e26;
+      }
+    }
+    /* swiper slider active end */
+  }
+}
+/*=============== Our Games section start ===============*/
+
+/*=============== 5. Explore Game section start ===============*/
+.exploreGame-section {
+  .container {
+    /*  Explore Game section tab video start */
+    .tab-block {
+      .tab-mnu {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        &:after {
+          content: "";
+        }
+        li {
+          padding-top: 13px;
+          padding-bottom: 13px;
+          cursor: pointer;
+          border-left: 6px solid #0f0f0f;
+        }
+        .active {
+          background-color: #263e26;
+          border-left: 6px solid #ff325a;
+          color: #ffff;
+          cursor: pointer;
+        }
+      }
+    }
+    /*  Explore Game section tab video end */
+  }
+}
+/*=============== Explore Game section end ===============*/
+/*################# home page start #################*/
+
+/*################# top trending page start #################*/
+/*=============== 6. top trending section stat ===============*/
+.topTrendingSection {
+  .container {
+    // card 1
+    .topTrend:after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      background: linear-gradient(
+        1deg,
+        rgba(3, 3, 4, 0.9) -3.02%,
+        rgba(3, 3, 4, 0) 99.06%
+      );
+    }
+    .topTrend1:before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 0%;
+      width: 100%;
+      bottom: 2px;
+      left: 0;
+      z-index: 12;
+      transition: height 0.5s ease-out;
+      border-radius: 24px;
+      background: linear-gradient(
+        1deg,
+        rgba(7, 255, 7, 0.555) -3.02%,
+        rgba(3, 3, 4, 0) 99.06%
+      );
+    }
+    .topTrend1:hover:before {
+      height: 100%;
+    }
+  }
+}
+/*=============== top trending section end ===============*/
+/*################# top trending page start #################*/
+
+/*################# popular games page start #################*/
+/*=============== 7. popular games section end ===============*/
+.popularGame-section {
+  .container {
+    /* popular games card before start */
+    .popularGame {
+      background: linear-gradient(
+        1deg,
+        rgba(3, 3, 4, 0.9) -3.02%,
+        rgba(3, 3, 4, 0) 99.06%
+      );
+      object-fit: cover;
+      position: relative;
+    }
+    .popularGame:before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 0%;
+      width: 100%;
+      bottom: 2px;
+      left: 0;
+      transition: height 0.5s ease-out;
+      border-radius: 24px;
+      background: linear-gradient(
+        1deg,
+        rgba(7, 255, 7, 0.555) -3.02%,
+        rgba(3, 3, 4, 0) 99.06%
+      );
+    }
+    .popularGame:hover:before {
+      height: 100%;
+    }
+    /* popular games card before start */
+  }
+}
+/*=============== popular games section end ===============*/
+/*################# popular games page start #################*/
+
+/*################# achievements page end #################*/
+/*=============== 8. achievements section end ===============*/
+.achievements-section {
+  .container {
+    .buttonAch {
+      color: #fff;
+      transition: all 0.3s ease;
+      &:focus {
+        animation: clickEffect 0.3s ease forwards;
+        transform: scale(0.9);
+      }
+      &.active {
+        background: var(
+          --Button,
+          linear-gradient(100deg, #ff325a 9.67%, #e1e500 87.06%)
+        );
+        color: #ffff;
+      }
+    }
+  }
+}
+/*=============== achievements section end ===============*/
+/*################# achievements page end #################*/
+
+/*################# achievements introduction page start #################*/
+/*=============== 9. achievements introduction section stat ===============*/
+.introductionStartSection {
+  .container {
+    .bttsx:hover {
+      background: var(
+        --Button,
+        linear-gradient(100deg, #ff325a 9.67%, #e1e500 87.06%)
+      );
+      transition: 0.8s;
+      border-radius: 50px;
+    }
+  }
+}
+/*=============== achievements introduction section stat ===============*/
+
+/*=============== 10. achievements introduction faq section stat ===============*/
+.achievementFaq {
+  .container {
+    .header-area {
+      padding: 10px 0;
+      cursor: pointer;
+    }
+    .active .header-area .btnfrv {
+      display: none;
+    }
+    .content-area {
+      display: none;
+    }
+    .active .header-area .btnfadd {
+      i {
+        color: #ff325a;
+      }
+      display: block;
+    }
+    .active .header-area .text {
+      color: #ff325a;
+    }
+  }
+}
+/*=============== achievements introduction faq section end ===============*/
+/*################# achievements introduction page end #################*/
+
+/*################# bounty page end #################*/
+/*=============== 11. bounty bred crumb section section start ===============*/
+// .bounty-bredCrumb {
+//   background: linear-gradient(
+//       180deg,
+//       rgba(19, 18, 18, 0.78) 25.81%,
+//       rgba(20, 20, 20, 0.88) 63.99%,
+//       #0f0f0f 100%
+//     ),
+//     url(../assets/images/bountyDetails-page/bounty-hero.png) no-repeat;
+//   object-fit: cover;
+// }
+/*=============== bounty bred crumb section section start ===============*/
+/*################# bounty page end #################*/
+
+/*################# bred crumb start #################*/
+/*=============== 12. bred crumb section section start ===============*/
+/*.bred-crumb {
+  background: linear-gradient(
+      91deg,
+      rgba(6, 7, 7, 0.753) 0.97%,
+      rgba(2, 2, 2, 0.897) 100%
+    ),
+    url(../assets/images/game-page/game.png) no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-color: #0f0f0f;
+}*/
+/*=============== bred crumb section section end ===============*/
+/*################# bred crumb end #################*/
+
+//game page icon active
+.navbar-inverse.menu ul li a {
+  background: transparent;
+}
+.navbar-inverse.menu ul li a:hover,
+.navbar-inverse.menu ul li a.active,
+.navbar-inverse.menu ul li a.active:hover {
+  color: #ff325a;
+}
+
+/*=============== 13. global style start ===============*/
+
+/* our games section pagination start */
+.pageHead {
+  width: 100%;
+  height: 1px;
+  background-color: #ff325a;
+  .swiper-pagination-bullet {
+    width: 140px;
+    height: 4px;
+    background-color: #ff325a;
+    border-radius: 0px;
+  }
+}
+.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  width: 100%;
+  margin-top: -6px;
+}
+.swiper-pagination {
+  position: relative;
+}
+/* our games section pagination end */
+
+/* hero infinity round image tag animation css start */
+@keyframes rotate-full {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  & .infinite {
+    animation-iteration-count: infinite;
+  }
+}
+.box1 {
+  border-radius: 100%;
+  object-fit: cover;
+  transform: rotate(0deg);
+  img {
+    border-radius: 100%;
+    object-fit: cover;
+  }
+}
+.rotate {
+  animation: rotation-full 5s infinite linear;
+}
+.rotate-full {
+  animation: infinite-spinning 16s infinite linear;
+}
+/* hero infinity round image tag animation css end */
+
+/* card button start */
+.salBa-area {
+  .salBa {
+    padding: 2px;
+    border: 2px solid #e1e500;
+    border: dotted;
+  }
+}
+/* card button end */
+
+/* global button style start */
+.buttonx {
+  border-radius: 50px;
+  cursor: pointer;
+  background: #ff325a;
+  transition: all 0.5s ease;
+}
+
+.buttonx:hover {
+  background: var(
+    --Button,
+    linear-gradient(100deg, #ff325a 9.67%, #e1e500 87.06%)
+  );
+  color: #0f0f0f;
+  box-shadow: #ff325a 0px 7px 29px 0px;
+}
+/* global button style end */
+
+/* img zoom in zoom out start */
+.img-box {
+  overflow: hidden;
+}
+.img {
+  background-size: cover;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.img:hover {
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+/* img zoom in zoom out end */
+
+/* Newsletter hidden start */
+.globl {
+  overflow: hidden;
+}
+/* Newsletter hidden end */
+
+/* swiper slider active start */
+.slider-researches {
+  .swiper-slide-active {
+    border: 2px solid #f29620;
+    transition: 1s;
+    background-color: #263e26;
+  }
+}
+/* swiper slider active end */
+
+/* bounty section card & color hover start */
+.bounty-section:hover .bounty-area .bounty i {
+  background: var(
+    --Button,
+    linear-gradient(100deg, #ff325a 9.67%, #e1e500 87.06%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.8s;
+}
+.bounty-section:hover .bounty-areax .bountyx i {
+  background: var(
+    --Button,
+    linear-gradient(100deg, #ff325a 9.67%, #e1e500 87.06%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 1s;
+}
+.bounty-section:hover .butt-area .butt {
+  background: var(
+    --Button,
+    linear-gradient(100deg, #ff325a 9.67%, #e1e500 87.06%)
+  );
+  box-shadow: #29171a 0px 7px 29px 0px;
+  color: #ffff;
+}
+.bounty-section:hover .num {
+  background: var(
+    --Button,
+    linear-gradient(100deg, #ff325a 9.67%, #e1e500 87.06%)
+  );
+  box-shadow: #1f1013 0px 7px 29px 0px;
+  color: #ffff;
+}
+/* bounty section card & color hover end */
+
+/* tab style active start */
+.tab-btn:hover {
+  background: var(
+    --Button,
+    linear-gradient(100deg, #ff325a 9.67%, #e1e500 87.06%)
+  );
+  box-shadow: #29171a 0px 7px 29px 0px;
+  color: #ffff;
+}
+.tab-btn.active {
+  background: #ff325a;
+  box-shadow: #29171a 0px 7px 29px 0px;
+  color: #ffff;
+}
+.content {
+  display: none;
+}
+.content.show {
+  display: flex;
+}
+/* tab style active end */
+
+/* tab propup start */
+.white-popup {
+  position: relative;
+  width: auto;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.mfp-zoom-in {
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+  }
+
+  &.mfp-bg {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: scale(1);
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+
+  &.mfp-removing {
+    .mfp-with-anim {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes hinge {
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  20%,
+  60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+    transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(700px);
+    opacity: 0;
+  }
+}
+
+.hinge {
+  animation-duration: 1s;
+  animation-name: hinge;
+}
+.mfp-with-fade {
+  .mfp-content,
+  &.mfp-bg {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+  &.mfp-ready {
+    .mfp-content {
+      opacity: 1;
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  .mfp-close {
+    color: #ffff;
+  }
+  &.mfp-removing {
+    &.mfp-bg {
+      opacity: 0;
+    }
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+/* tab propup end */
+
+/* Gamefi Index card sing in start */
+.beforeX::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #878b95;
+  position: absolute;
+  top: 26px;
+  left: 100px;
+}
+.beforeX::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #878b95;
+  position: absolute;
+  top: 26px;
+  right: 100px;
+}
+/* Gamefi Index card sing in end */
+
+/* Wallet start */
+.beforeWal::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #878b95;
+  position: absolute;
+  top: 34px;
+  left: 20px;
+}
+.beforeWal::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #878b95;
+  position: absolute;
+  top: 34px;
+  right: 20px;
+}
+/* Wallet end */
+
+/* tab start */
+.tab {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 95%;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: #ff325a;
+      transition: 0.2s;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &.is--active {
+      color: #ffff;
+      position: relative;
+
+      &:before {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &__content-item {
+    display: none;
+
+    &.is--active {
+      display: block;
+    }
+  }
+}
+/* tab end */
+
+/* footer Benefit hover color start */
+.icons {
+  opacity: 0;
+  transition: 1s;
+}
+.arrIcon:hover .icons {
+  opacity: 100;
+  color: #ff325a;
+  transition: 1s;
+}
+/* footer Benefit hover color end */
+
+/*=============== global style end ===============*/
+
+/*=============== 14. responsive start ===============*/
+
+@media screen and (max-width: 992px) {
+  // nav ber section nav down
+  .header-section {
+    .header {
+      .container {
+        #mobile-menu {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background: #263e26;
+          transform: translateX(-100%);
+          transition: transform 0.3s ease-in-out;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #mobile-menu.show-menu {
+          transform: translateX(0%);
+        }
+
+        #hamburger-cross {
+          display: block;
+          color: white;
+          cursor: pointer;
+          font-size: 40px;
+          position: absolute;
+          top: 20px;
+          right: 26px;
+        }
+
+        #hamburger-menu {
+          display: block;
+          color: white;
+          cursor: pointer;
+          font-size: 24px;
+        }
+
+        // nav ber dropdown
+        .dropdown-content {
+          min-width: 220px;
+          margin-left: 12rem;
+          margin-top: -3rem;
+          text-align: center;
+          background-color: red;
+        }
+      }
+    }
+  }
+
+  // our game section
+  .ourGameSection {
+    .container {
+      //our games section pagination
+      .pageHead {
+        width: 100%;
+        height: 1px;
+        background-color: #ff325a;
+        .swiper-pagination-bullet {
+          width: 20%;
+          height: 4px;
+          background-color: #ff325a;
+          border-radius: 0px;
+        }
+      }
+      .swiper-pagination-bullets,
+      .swiper-pagination-bullets.swiper-pagination-horizontal,
+      .swiper-pagination-custom,
+      .swiper-pagination-fraction {
+        width: 100%;
+        margin-top: -6px;
+      }
+      .swiper-pagination {
+        position: relative;
+      }
+    }
+  }
+
+  // global table scroll
+  .leadTabel {
+    overflow-x: scroll;
+    width: 90rem;
+  }
+  // bounty table scroll
+  .leadTabely {
+    overflow-x: scroll;
+    width: 60rem;
+  }
+  // game table scroll
+  .leadTabelx {
+    overflow-x: scroll;
+    width: 30rem;
+  }
+}
+@media (max-width: 768px) {
+  //our games section pagination
+  .pageHead {
+    width: 100%;
+    height: 1px;
+    background-color: #ff325a;
+    .swiper-pagination-bullet {
+      width: 80px;
+      height: 4px;
+      background-color: #ff325a;
+      border-radius: 0px;
+    }
+  }
+  .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    width: 100%;
+    margin-top: -6px;
+  }
+  .swiper-pagination {
+    position: relative;
+  }
+}
+@media screen and (max-width: 576px) {
+  .icon4 {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 568px) {
+  .icon1 {
+    margin-top: 0;
+  }
+  .icon2 {
+    margin-top: 0;
+  }
+  .icon3 {
+    margin-top: 0;
+  }
+}
+@media (max-width: 500px) {
+  .navHero-section {
+    .header {
+      //notification
+      .beforeAfter::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: #878b95;
+        position: absolute;
+        top: 12px;
+        left: 60px;
+      }
+      .beforeAfter::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: #878b95;
+        position: absolute;
+        top: 12px;
+        right: 60px;
+      }
+    }
+  }
+
+  //our games section pagination
+  .pageHead {
+    width: 100%;
+    height: 1px;
+    background-color: #ff325a;
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 4px;
+      background-color: #ff325a;
+      border-radius: 0px;
+    }
+  }
+  .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    width: 100%;
+    margin-top: -6px;
+  }
+  .swiper-pagination {
+    position: relative;
+  }
+}
+@media screen and (max-width: 472px) {
+  .icon3 {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 408px) {
+  .icon2 {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 344px) {
+  .icon4 {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 342px) {
+  .icon1 {
+    margin-top: 2rem;
+  }
+}
+/*=============== responsive end ===============*/
+

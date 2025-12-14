@@ -1,0 +1,14 @@
+version: '3.6'
+
+services:
+  ui:
+    container_name: urtopup-ui
+    image: registry.gitlab.com/ruangmenu/urtopup:ui
+    env_file: ".env.production.ui"
+    ports:
+      - "3002:3000"
+    restart: unless-stopped
+
+networks:
+  shared_network:
+    external: true  # Use the manually created network
